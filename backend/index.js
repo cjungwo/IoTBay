@@ -10,9 +10,10 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-// Database Connection wit mongoDB
+// Database Connection with mongoDB
 // mongodb+srv://cjungwo:P6aZTMcVHONZDTCl@cluster0.5fb0puw.mongodb.net/
 mongoose.connect("mongodb+srv://cjungwo:P6aZTMcVHONZDTCl@cluster0.5fb0puw.mongodb.net/ecommerce_app");
+
 
 // API Creation
 app.get("/", (req, res) => {
