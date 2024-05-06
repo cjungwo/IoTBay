@@ -2,14 +2,13 @@ import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Shop } from './Pages/Shop';
-import { ShopCategory } from './Pages/ShopCategory';
 import { Product } from './Pages/Product';
 import { Cart } from './Pages/Cart';
 import { LoginSignup } from './Pages/LoginSignup';
 import { Footer } from './Components/Footer/Footer';
-import men_banner from './Components/Assets/banner_mens.png';
-import women_banner from './Components/Assets/banner_women.png';
-import kid_banner from './Components/Assets/banner_kids.png';
+import About from './Pages/About';
+import ProductList from './Pages/ProductList';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -18,9 +17,9 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}/>
-        <Route path='/product/temprature' element={<ShopCategory banner={men_banner} category="temperature"/>}/>
-        <Route path='/product/wireless' element={<ShopCategory banner={women_banner} category="wireless"/>}/>
-        <Route path='/product/others' element={<ShopCategory banner={kid_banner} category="others"/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/shop' element={<ProductList/>}/>
+        <Route path='/contact' element={<Contact/>}/>
         <Route path='/product' element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>
