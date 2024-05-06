@@ -1,0 +1,131 @@
+.loginsignup {
+    width: 100%;
+    height: 90vh;
+    background: #fce3fe;
+    padding: 80px 0;
+}
+
+.loginsignup_containter {
+    width: 580px;
+    height: 600px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.loginsignup_containter h1 {
+    margin: 20px 0;
+}
+
+.loginsignup_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+
+.loginsignup_fields input {
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #292929;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.loginsignup_containter button {
+    width: 600px;
+    height: 72px;
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginsignup_login {
+    margin-top: 20px;
+    color: #525252;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.loginsignup_login span {
+    color: #ff4141;
+    font-weight: 600;
+}
+
+.loginsignup_agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #525252;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    .loginsignup {
+        padding-top: 50px;
+    }
+
+    .loginsignup_containter {
+        width: auto;
+        min-width: 500px;
+        min-height: 500px;
+    }
+
+    .loginsignup_containter h1 {
+        margin: 10px 0;
+    }
+
+    .loginsignup_fields {
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .loginsignup_fields input {
+        height: 65px;
+        width: 93%;
+    }
+
+    .loginsignup_containter button {
+        width: 100%;
+    }
+
+    .loginsignup_login {
+        font-size: 16px;
+    }
+
+    .loginsignup_agree {
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .loginsignup_containter {
+        padding: 20px 30px;
+    }
+
+    .loginsignup_containter h1 {
+       font-size: 24px;
+    }
+
+    .loginsignup_fields {
+        margin-top: 20px;
+    }
+
+    .loginsignup_fields input {
+        height: 50px;
+    }
+
+    .loginsignup_containter button {
+        height: 50px;
+        font-size: 16px;
+    }
+}
